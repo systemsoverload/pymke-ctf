@@ -64,7 +64,7 @@ USER_INSERTS = getattr(local, 'USER_INSERTS', [
             , 'person@pythonmke.org'
             , 'abc123'
             , 'person@pythonmke.org'
-        )""", ('false', str(uuid4()), today) ),
+        )""", ('', str(uuid4()), today) ),
     (
         """INSERT INTO user
         (user_id
@@ -87,7 +87,7 @@ USER_INSERTS = getattr(local, 'USER_INSERTS', [
             , 'Zaphod.Beeblebrox@gmail.com'
             , 'abc123'
             , 'Zaphod.Beeblebrox@gmail.com'
-        )""", ('false', str(uuid4()), today) ),
+        )""", ('', str(uuid4()), today) ),
     (
         """INSERT INTO user
         (user_id
@@ -133,6 +133,6 @@ USER_INSERTS = getattr(local, 'USER_INSERTS', [
             , 'Ford.Prefect@gmail.com'
             , 'abc123'
             , 'Ford.Prefect@gmail.com'
-        )""", ('false', str(uuid4()), today)
+        )""", ('', str(uuid4()), today)
     )
 ])
