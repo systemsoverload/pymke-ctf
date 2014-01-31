@@ -1,10 +1,10 @@
-clone
+- git clone
 
-cd <cloned repo>
+- cd (cloned repo)
 
-mkdir env
-virtualenv env
-source env/bin/activate
+- mkdir env
+- virtualenv env
+- source env/bin/activate
 
-pip install -r requirements.txt
-python level00.py
+- pip install -r requirements.txt
+- python level00.py
