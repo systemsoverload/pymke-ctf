@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+</head>
+<body>
+	Login:
+	<form method='POST' action='/login'>
+		<div>
+			<label for='username'>Username</label>
+			<input type='text' name='username' />
+		</div>
+		<div>
+			<label for='password'>Password</label>
+			<input type='password' name='password' />
+		</div>
+		<input type='hidden' value='{{next}}'/>
+		<input type='submit' />
+	</form>
+
+	<div id='form_errors' style='color:#f10000;'>
+	{% for error in errors %}
+		<div>{{error}}</div>
+	{% endfor %}
+	</div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Geocities Homepage</title>
+	<script type="text/javascript">
+		window.logOut = function(){
+			document.cookie = 'session=; Max-Age=0';
+			window.location.reload();
+		}
+	</script>
+</head>
+<body>
+	<h2>Hello <b>{{ user.first_name }} {{ user.last_name }}</b></h2>
+	Edit <a href ="/profile/{{ user.user_id }}">Profile</a> || <a href='javascript:window.logOut()'>Logout</a>
+
+	<div>
+		{% if user.admin %}
+			The secret code is {{ secret_code }}
+		{% else %}
+			Permission Denied: You must be an admin to see the secret code!
+		{% endif %}
+	</div>
+
+</body>
+</html>
